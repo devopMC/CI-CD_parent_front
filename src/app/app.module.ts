@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule, NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
-import { HeaderComponent } from './Views/header/header.component';
+import { HeaderComponent } from '.src/app/Views/header/header.component.ts';
 import { AddSignalisationComponent } from './Views/signalisation/add-signalisation/add-signalisation.component';
 import { HomeComponent } from './Views/home/home.component';
 import { ListeEtablissementsComponent } from './Views/etablissement/liste-etablissements/liste-etablissements.component';
