@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule, NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
@@ -19,8 +18,6 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AddSignalisationfichierComponent } from './Views/signalisation/add-signalisationfichier/add-signalisationfichier.component';
-import { TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing'; // Importez HttpClientTestingModule
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,8 +40,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing'; // Impor
     MatInputModule,
     MatPaginatorModule,
     MatSortModule,
-    MatSnackBarModule,
-    HeaderComponent
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
