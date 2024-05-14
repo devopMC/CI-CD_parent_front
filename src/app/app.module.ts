@@ -49,18 +49,3 @@ import { MyService } from './my.service';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-describe('MyService', () => {
-  let service: MyService;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule], // Utilisez HttpClientTestingModule ici
-      providers: [MyService]
-    });
-    service = TestBed.inject(MyService);
-  });
-
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
