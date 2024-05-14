@@ -20,7 +20,6 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AddSignalisationfichierComponent } from './Views/signalisation/add-signalisationfichier/add-signalisationfichier.component';
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing'; // Importez HttpClientTestingModule
-import { MyService } from './my.service';
 @NgModule({
   declarations: [
     AppComponent,
