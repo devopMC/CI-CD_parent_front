@@ -18,6 +18,9 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AddSignalisationfichierComponent } from './Views/signalisation/add-signalisationfichier/add-signalisationfichier.component';
+import { TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing'; // Importez HttpClientTestingModule
+import { MyService } from './my.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,3 +49,18 @@ import { AddSignalisationfichierComponent } from './Views/signalisation/add-sign
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+describe('MyService', () => {
+  let service: MyService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule], // Utilisez HttpClientTestingModule ici
+      providers: [MyService]
+    });
+    service = TestBed.inject(MyService);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});
