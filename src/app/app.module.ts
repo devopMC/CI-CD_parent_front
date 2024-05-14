@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HeaderComponent } from 'chemin/vers/le/fichier/header.component';
+import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule, NgbPaginationModule, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
@@ -42,7 +43,8 @@ import { HttpClientTestingModule } from '@angular/common/http/testing'; // Impor
     MatInputModule,
     MatPaginatorModule,
     MatSortModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HeaderComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
