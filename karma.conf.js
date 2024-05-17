@@ -20,11 +20,7 @@ module.exports = function(config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
 
-    coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, './coverage'),
-      reports: ['html', 'lcovonly', 'text-summary'],
-      fixWebpackSourcePaths: true
-    },
+ 
 
     // List of files / patterns to load in the browser
     files: [
@@ -60,19 +56,7 @@ module.exports = function(config) {
 
     // Start these browsers
     // Available browser launchers: https://www.npmjs.com/search?q=keywords:karma-launcher
-    browsers: ['ChromeHeadless'],
-
-    // Custom launcher for ChromeHeadless
-    customLaunchers: {
-      ChromeHeadless: {
-        base: 'Chrome',
-        flags: [
-          '--headless',
-          '--disable-gpu',
-          '--no-sandbox'
-        ]
-      }
-    },
+    browsers: ['Chrome'],
 
     // Continuous Integration mode
     // If true, Karma captures browsers, runs the tests and exits
